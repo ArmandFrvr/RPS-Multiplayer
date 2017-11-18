@@ -1,0 +1,94 @@
+body {
+  text-align: center;
+  background-color: #0099FF;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 20px;
+  text-shadow: 0 0 3px #007acc;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+input, textarea, button {
+  background-color: #ccebff;
+  border: 2px solid #007acc;
+}
+
+input {
+  height: 26px;
+}
+
+#chatBox {
+  display: block;
+  padding: 5px;
+  margin: 20px auto;
+  width: 60%;
+  height: 100px;
+  overflow-y: auto;
+  resize: none;
+}
+
+#chatMsg {
+  width: calc(60% - 59px);
+}
+
+#name {
+  margin-top: 20px;
+}
+
+#sendBtn {
+
+}
+
+button {
+  height: 26px;
+  width: 55px;
+  font-weight: bold;
+}
+
+.gameBox {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 5px;
+  margin: 20px;
+  border: 2px solid #007acc;
+  width: 20%;
+  height: 200px;
+}
+
+#gameArea {
+  display: block;
+  margin: 20px;
+}
+
+#p1choice, #p1score,
+#p2choice, #p2score {
+  display: none;
+}
+
+#p1score, #p2score {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.accessible { /*Use this class to insert text specifically for screen readers*/
+  position: absolute !important;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#msgBox {
+  font-weight: bold;
+}
