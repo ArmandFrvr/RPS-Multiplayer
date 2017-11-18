@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <title>Multiplayer Rock, Paper, Scissors</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+
+<body>
+  <h1>Rock, Paper, Scissors</h1>
+
+  <section id="topArea">
+    <label for="name" class="accessible">Name:</label>
+    <input id="name" type="text" placeholder="Name">
+    <button id="startBtn">Start</button>
+    <div id="msgBox" aria-live="polite"></div>
+  </section>
+
+  <section id="gameArea" aria-role="main" aria-live="polite">
+    <div class="gameBox" id="player1">
+      <h2 id="p1name">Waiting for Player 1</h2>
+      <p id="p1choice"></p>
+      <p id="p1score">
+        Wins: <span id="p1wins">0</span>
+        Losses: <span id="p1losses">0</span>
+      </p>
+    </div>
+
+    <div class="gameBox" id="messages">
+    </div>
+
+    <div class="gameBox" id="player2">
+      <h2 id="p2name">Waiting for Player 2</h2>
+      <p id="p2choice"></p>
+      <p id="p2score">
+        Wins: <span id="p2wins">0</span>
+        Losses: <span id="p2losses">0</span>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <textarea id="chatBox" aria-live="polite"></textarea>
+    <input id="chatMsg" aria-labelledby="sendBtn">
+    <button id="sendBtn">Send</button>
+  </section>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>
